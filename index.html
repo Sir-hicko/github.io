@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+
+
+<section class="Head">
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#store">Store</a>
+  <input type="text" placeholder="Search..">
+</div>
+
+<div style="padding-left:16px">
+  <h2>UniqueWalls</h2>
+</div>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Uniquewalls1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Uniquewalls2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Uniquewalls3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</section>
+<section class="yon">
+
+<h2>UniqueWalls History</h2>
+<img class="sticky" src="Uniquewallsava.jpg" alt="Avatar">
+<p1>UniqueWalls Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit eget. Sagittis orci a scelerisque purus. Odio facilisis mauris sit amet. Risus quis varius quam quisque id diam. Nibh tellus molestie nunc non blandit massa enim nec. Vitae turpis massa sed elementum tempus egestas sed sed risus. Aenean et tortor at risus viverra adipiscing at in tellus. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Quis risus sed vulputate odio ut. Eget gravida cum sociis natoque.
+
+Sed risus pretium quam vulputate dignissim. Volutpat blandit aliquam etiam erat velit. Lectus proin nibh nisl condimentum. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet risus nullam eget felis eget nunc lobortis. Nisi est sit amet facilisis magna etiam. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Proin nibh nisl condimentum id venenatis. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Urna duis convallis convallis tellus id. Pulvinar etiam non quam lacus suspendisse. Vitae congue mauris rhoncus aenean. Convallis convallis tellus id interdum velit laoreet id donec. Egestas sed sed risus pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit eget. Sagittis orci a scelerisque purus. Odio facilisis mauris sit amet. Risus quis varius quam quisque id diam. Nibh tellus molestie nunc non blandit massa enim nec. Vitae turpis massa sed elementum tempus egestas sed sed risus. Aenean et tortor at risus viverra adipiscing at in tellus. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Quis risus sed vulputate odio ut. Eget gravida cum sociis natoque.
+
+Sed risus pretium quam vulputate dignissim. Volutpat blandit aliquam etiam erat velit. Lectus proin nibh nisl condimentum. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet risus nullam eget felis eget nunc lobortis. Nisi est sit amet facilisis magna etiam. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Proin nibh nisl condimentum id venenatis. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Urna duis convallis convallis tellus id. Pulvinar etiam non quam lacus suspendisse. Vitae congue mauris rhoncus aenean. Convallis convallis tellus id interdum velit laoreet id donec. Egestas sed sed risus pretium.</p1>
+
+</section>
+</body>
+</html>
